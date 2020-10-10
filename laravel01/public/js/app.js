@@ -37266,6 +37266,8 @@ module.exports = function(module) {
 
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
+__webpack_require__(/*! ./my-script */ "./resources/js/my-script.js");
+
 /***/ }),
 
 /***/ "./resources/js/bootstrap.js":
@@ -37313,6 +37315,41 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 /***/ }),
 
+/***/ "./resources/js/my-script.js":
+/*!***********************************!*\
+  !*** ./resources/js/my-script.js ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/* ================================================================
+ // Kode untuk menampilkan nama file pada form yang menggunakan
+ // custom file upload Bootstrap, dipakai dalam form register dan update
+ */
+$('input[type="file"]').on('change', function () {
+  var filenames = [];
+  var files = document.getElementById('gambar_profil').files;
+
+  for (var i in files) {
+    if (files.hasOwnProperty(i)) {
+      filenames.push(files[i].name);
+    }
+  }
+
+  $(this).next('.custom-file-label').addClass("selected").html(filenames.join(', '));
+});
+/* ================================================================
+// Kode untuk membuat gambar pilihan background profil bisa dipilih
+// Dipakai dalam form register dan update
+*/
+
+$('.pilihan-background-profil').click(function () {
+  var nomorGambar = this.children[0].innerHTML;
+  $('#background_profil').val(nomorGambar);
+});
+
+/***/ }),
+
 /***/ "./resources/sass/app.scss":
 /*!*********************************!*\
   !*** ./resources/sass/app.scss ***!
@@ -37320,7 +37357,7 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-throw new Error("Module build failed (from ./node_modules/css-loader/index.js):\nModuleBuildError: Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\nSassError: expected \"{\".\n  ╷\n2 │  #main-navbar .nav-link{ 4 border-bottom: 5px solid #343a40; 5 color: #e2e1e1; 6 } 7 #main-navbar .nav-link:hover, #main-navbar a.active { 8 border-bottom: 5px solid #117a8b; 9 color: white;\r\n  │                                                            ^\n  ╵\n  resources\\sass\\my-style.scss 2:60  @import\n  C:\\xampp\\htdocs\\ujicoba\\gec\\laravel01\\resources\\sass\\app.scss 16:9                         root stylesheet\n    at runLoaders (C:\\xampp\\htdocs\\ujicoba\\gec\\laravel01\\node_modules\\webpack\\lib\\NormalModule.js:316:20)\n    at C:\\xampp\\htdocs\\ujicoba\\gec\\laravel01\\node_modules\\loader-runner\\lib\\LoaderRunner.js:367:11\n    at C:\\xampp\\htdocs\\ujicoba\\gec\\laravel01\\node_modules\\loader-runner\\lib\\LoaderRunner.js:233:18\n    at context.callback (C:\\xampp\\htdocs\\ujicoba\\gec\\laravel01\\node_modules\\loader-runner\\lib\\LoaderRunner.js:111:13)\n    at render (C:\\xampp\\htdocs\\ujicoba\\gec\\laravel01\\node_modules\\sass-loader\\dist\\index.js:73:7)\n    at Function.call$2 (C:\\xampp\\htdocs\\ujicoba\\gec\\laravel01\\node_modules\\sass\\sass.dart.js:89862:16)\n    at _render_closure1.call$2 (C:\\xampp\\htdocs\\ujicoba\\gec\\laravel01\\node_modules\\sass\\sass.dart.js:79036:12)\n    at _RootZone.runBinary$3$3 (C:\\xampp\\htdocs\\ujicoba\\gec\\laravel01\\node_modules\\sass\\sass.dart.js:26612:18)\n    at _FutureListener.handleError$1 (C:\\xampp\\htdocs\\ujicoba\\gec\\laravel01\\node_modules\\sass\\sass.dart.js:25140:19)\n    at _Future__propagateToListeners_handleError.call$0 (C:\\xampp\\htdocs\\ujicoba\\gec\\laravel01\\node_modules\\sass\\sass.dart.js:25437:49)\n    at Object._Future__propagateToListeners (C:\\xampp\\htdocs\\ujicoba\\gec\\laravel01\\node_modules\\sass\\sass.dart.js:4502:77)\n    at _Future._completeError$2 (C:\\xampp\\htdocs\\ujicoba\\gec\\laravel01\\node_modules\\sass\\sass.dart.js:25270:9)\n    at _AsyncAwaitCompleter.completeError$2 (C:\\xampp\\htdocs\\ujicoba\\gec\\laravel01\\node_modules\\sass\\sass.dart.js:24613:12)\n    at Object._asyncRethrow (C:\\xampp\\htdocs\\ujicoba\\gec\\laravel01\\node_modules\\sass\\sass.dart.js:4251:17)\n    at C:\\xampp\\htdocs\\ujicoba\\gec\\laravel01\\node_modules\\sass\\sass.dart.js:13112:20\n    at _wrapJsFunctionForAsync_closure.$protected (C:\\xampp\\htdocs\\ujicoba\\gec\\laravel01\\node_modules\\sass\\sass.dart.js:4276:15)\n    at _wrapJsFunctionForAsync_closure.call$2 (C:\\xampp\\htdocs\\ujicoba\\gec\\laravel01\\node_modules\\sass\\sass.dart.js:24634:12)\n    at _awaitOnObject_closure0.call$2 (C:\\xampp\\htdocs\\ujicoba\\gec\\laravel01\\node_modules\\sass\\sass.dart.js:24626:25)\n    at _RootZone.runBinary$3$3 (C:\\xampp\\htdocs\\ujicoba\\gec\\laravel01\\node_modules\\sass\\sass.dart.js:26612:18)\n    at _FutureListener.handleError$1 (C:\\xampp\\htdocs\\ujicoba\\gec\\laravel01\\node_modules\\sass\\sass.dart.js:25140:19)\n    at _Future__propagateToListeners_handleError.call$0 (C:\\xampp\\htdocs\\ujicoba\\gec\\laravel01\\node_modules\\sass\\sass.dart.js:25437:49)\n    at Object._Future__propagateToListeners (C:\\xampp\\htdocs\\ujicoba\\gec\\laravel01\\node_modules\\sass\\sass.dart.js:4502:77)\n    at _Future._completeError$2 (C:\\xampp\\htdocs\\ujicoba\\gec\\laravel01\\node_modules\\sass\\sass.dart.js:25270:9)\n    at _AsyncAwaitCompleter.completeError$2 (C:\\xampp\\htdocs\\ujicoba\\gec\\laravel01\\node_modules\\sass\\sass.dart.js:24613:12)\n    at Object._asyncRethrow (C:\\xampp\\htdocs\\ujicoba\\gec\\laravel01\\node_modules\\sass\\sass.dart.js:4251:17)\n    at C:\\xampp\\htdocs\\ujicoba\\gec\\laravel01\\node_modules\\sass\\sass.dart.js:15754:20\n    at _wrapJsFunctionForAsync_closure.$protected (C:\\xampp\\htdocs\\ujicoba\\gec\\laravel01\\node_modules\\sass\\sass.dart.js:4276:15)\n    at _wrapJsFunctionForAsync_closure.call$2 (C:\\xampp\\htdocs\\ujicoba\\gec\\laravel01\\node_modules\\sass\\sass.dart.js:24634:12)\n    at _awaitOnObject_closure0.call$2 (C:\\xampp\\htdocs\\ujicoba\\gec\\laravel01\\node_modules\\sass\\sass.dart.js:24626:25)\n    at _RootZone.runBinary$3$3 (C:\\xampp\\htdocs\\ujicoba\\gec\\laravel01\\node_modules\\sass\\sass.dart.js:26612:18)\n    at _FutureListener.handleError$1 (C:\\xampp\\htdocs\\ujicoba\\gec\\laravel01\\node_modules\\sass\\sass.dart.js:25140:19)\n    at _Future__propagateToListeners_handleError.call$0 (C:\\xampp\\htdocs\\ujicoba\\gec\\laravel01\\node_modules\\sass\\sass.dart.js:25437:49)\n    at Object._Future__propagateToListeners (C:\\xampp\\htdocs\\ujicoba\\gec\\laravel01\\node_modules\\sass\\sass.dart.js:4502:77)\n    at _Future._completeError$2 (C:\\xampp\\htdocs\\ujicoba\\gec\\laravel01\\node_modules\\sass\\sass.dart.js:25270:9)\n    at _AsyncAwaitCompleter.completeError$2 (C:\\xampp\\htdocs\\ujicoba\\gec\\laravel01\\node_modules\\sass\\sass.dart.js:24613:12)\n    at Object._asyncRethrow (C:\\xampp\\htdocs\\ujicoba\\gec\\laravel01\\node_modules\\sass\\sass.dart.js:4251:17)");
+// removed by extract-text-webpack-plugin
 
 /***/ }),
 
