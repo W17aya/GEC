@@ -40,10 +40,10 @@
                      <a class="nav-link p-4" href="#">Blog</a>
                      </li>
                      <li class="nav-item">
-                     <a class="nav-link p-4" href="#">Article</a>
+                     <a class="nav-link p-4" href="#">Artikel</a>
                      </li>
                      <li class="nav-item">
-                     <a class="nav-link p-4" href="#">Gallery</a>
+                     <a class="nav-link p-4" href="#">Galeri</a>
                      </li>
                      </ul>
                     <!-- Right Side Of Navbar -->
@@ -104,10 +104,10 @@
  <div class="col-md-3 text-center">
  <h5>Community</h5>
  <ul class="list-unstyled">
- <li><a href="#" class="text-white">Activity</a></li>
- <li><a href="#" class="text-white">Members</a></li>
- <li><a href="#" class="text-white">Groups</a></li>
- <li><a href="#" class="text-white">Forums</a></li>
+ <li><a href="#" class="text-white">Aktifitas</a></li>
+ <li><a href="#" class="text-white">Member</a></li>
+ <li><a href="#" class="text-white">Alumni</a></li>
+ <li><a href="#" class="text-white">Forum</a></li>
  </ul>
  </div>
 
@@ -129,7 +129,7 @@
  <div class="text-nowrap"><i class="fas fa-envelope fa-fw mr-3"></i>
  ekowijayawindows@gmail.com</div>
  <div class="text-nowrap"><i class="fas fa-phone fa-fw mr-3"></i>
- (62) 8153350037</div>
+ (+62) 8153350037</div>
  </div>
  </div>
 

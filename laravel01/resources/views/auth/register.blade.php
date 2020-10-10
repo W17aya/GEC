@@ -22,7 +22,7 @@
      <hr>
      <form method="POST" action="{{ route('register') }}"
      enctype="multipart/form-data">
- 
+     @include('layouts.form',['tombol' => 'Daftar'])
      </form>
      </div>
      </div>

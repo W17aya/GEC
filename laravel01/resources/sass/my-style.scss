@@ -1,5 +1,14 @@
 /* NAVBAR */
- #main-navbar .nav-link{ 4 border-bottom: 5px solid #343a40; 5 color: #e2e1e1; 6 } 7 #main-navbar .nav-link:hover, #main-navbar a.active { 8 border-bottom: 5px solid #117a8b; 9 color: white;
+ #main-navbar .nav-link 
+ { 
+    border-bottom: 5px solid #343a40; 
+    color: #e2e1e1;
+ }
+
+#main-navbar .nav-link:hover, #main-navbar a.active
+{ 
+        border-bottom: 5px solid #117a8b; 
+        color: white;
  }
 
  .main-logo {
