@@ -49,10 +49,23 @@ class RegisterController extends Controller
      */
     protected function validator(array $data)
     {
-        return Validator::make($data, [
-            'name' => ['required', 'string', 'max:255'],
-            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
-            'password' => ['required', 'string', 'min:8', 'confirmed'],
+
+       // Satukan ketiga komponen tanggal
+ $tanggal_lahir = $data["thn"].str_pad($data["bln"],2,0,STR_PAD_LEFT).
+ str_pad($data["tgl"],2,0,STR_PAD_LEFT);
+ // Input kedalam array $data agar $tanggal_lahir bisa ikut di validasi
+ $data['tanggal_lahir'] = $tanggal_lahir;
+ return Validator::make($data, [
+ 'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
+ 'password' => ['required', 'string', 'min:8', 'confirmed'],
+ 'nama' => ['required', 'string', 'max:255'],
+ 'tanggal_lahir' => ['required','date', 'before:-10 years',
+ 'after:-100 years'],
+ 'pekerjaan' => ['sometimes', 'nullable', 'string', 'max:255'],
+ 'kota' => ['sometimes', 'nullable', 'string', 'max:255'],
+ 'bio_profil' => ['sometimes', 'nullable', 'string'],
+ 'gambar_profil' => ['sometimes','file','image','max:2000'],
+ 'background_profil' => ['required', 'integer', 'min:1', 'max:12' ],
         ]);
     }
 

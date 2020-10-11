@@ -6,7 +6,7 @@
        <!-- CSRF Token -->
      <meta name="csrf-token" content="{{ csrf_token() }}"> 
      <title>GEC</title>
-     <link rel="icon" href="{{ asset('img/favicon.png') }}" type="image/logo.png">
+     <link rel="icon" href="{{ asset('img/logo gec.jpg') }}" type="image/logo.png">
 
      <script src="{{ asset('js/app.js') }}" defer></script>
      
@@ -21,7 +21,7 @@
                     <span class="d-none" > GEC</span>
                     <img src="{{ asset('img/logo gec.jpg') }}"
                     27 class="main-logo d-none d-md-inline" alt="GEC logo">
-                     <img src="{{ asset('img/logo.png') }}"
+                     <img src="{{ asset('img/logo gec.jpg') }}"
                     29 class="small-logo d-inline d-md-none" alt="GEC logo">
                     </a>
                      <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -37,10 +37,10 @@
                      <a class="nav-link p-4 active" href="{{ route('home') }}">Home</a>
                      </li>
                      <li class="nav-item">
-                     <a class="nav-link p-4" href="#">Blog</a>
+                     <a class="nav-link p-4" href="#">Profile</a>
                      </li>
                      <li class="nav-item">
-                     <a class="nav-link p-4" href="#">Artikel</a>
+                     <a class="nav-link p-4" href="#">Paket</a>
                      </li>
                      <li class="nav-item">
                      <a class="nav-link p-4" href="#">Galeri</a>
@@ -94,42 +94,41 @@
  <div class="row">
  <div class="col-md-3 text-center text-md-left">
  <a href="index.html">
- <img src="{{ asset('img/logo.png') }}" style="height: 60px;">
+ <img src="{{ asset('img/logo gec.jpg') }}" style="height: 60px;">
  </a>
- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
- Aperiam cumque, esse modi maxime veniam nulla delectus dolorem
+ <p>PELATIHAN DAN PENDAMPINGAN KAPAL PESIAR
  </p>
  </div>
 
  <div class="col-md-3 text-center">
  <h5>Community</h5>
  <ul class="list-unstyled">
- <li><a href="#" class="text-white">Aktifitas</a></li>
- <li><a href="#" class="text-white">Member</a></li>
- <li><a href="#" class="text-white">Alumni</a></li>
- <li><a href="#" class="text-white">Forum</a></li>
+ <li><a href="#" class="text-white">Activity</a></li>
+ <li><a href="#" class="text-white">Members</a></li>
+ {{-- <li><a href="#" class="text-white">Alumni</a></li> --}}
+ {{-- <li><a href="#" class="text-white">Forums</a></li> --}}
  </ul>
  </div>
 
  <div class="col-md-3 text-center">
  <h5>Our Services</h5>
  <ul class="list-unstyled">
- <li><a href="#" class="text-white">Our mission</a></li>
- <li><a href="#" class="text-white">Help/Contact Us</a></li>
+ <li><a href="#" class="text-white">Hire Our Talents</a></li>
+ {{-- <li><a href="#" class="text-white">Help/Contact Us</a></li> --}}
 
 
- <li><a href="#" class="text-white">Privacy Policy</a></li>
- <li><a href="#" class="text-white">Cookie Policy</a></li>
- <li><a href="#" class="text-white">Terms & Conditions</a></li>
+ <li><a href="#" class="text-white">Corporate Training</a></li>
+ {{-- <li><a href="#" class="text-white">Cookie Policy</a></li>
+ <li><a href="#" class="text-white">Terms & Conditions</a></li> --}}
  </ul>
  </div>
 
  <div class="col-md-3 text-center text-md-left">
- <h5>Hubungi Kami</h5>
+ <h5>Contact Us</h5>
  <div class="text-nowrap"><i class="fas fa-envelope fa-fw mr-3"></i>
  ekowijayawindows@gmail.com</div>
  <div class="text-nowrap"><i class="fas fa-phone fa-fw mr-3"></i>
- (+62) 8153350037</div>
+ (+62) 815 4869 4576</div>
  </div>
  </div>
 
