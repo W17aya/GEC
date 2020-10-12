@@ -8,6 +8,7 @@ use App\User;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Str;
 
 class RegisterController extends Controller
 {
@@ -29,7 +30,7 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = RouteServiceProvider::HOME;
+    protected $redirectTo = '/';
 
     /**
      * Create a new controller instance.
@@ -51,8 +52,8 @@ class RegisterController extends Controller
     {
 
        // Satukan ketiga komponen tanggal
- $tanggal_lahir = $data["thn"].str_pad($data["bln"],2,0,STR_PAD_LEFT).
- str_pad($data["tgl"],2,0,STR_PAD_LEFT);
+        $tanggal_lahir = $data["thn"].str_pad($data["bln"],2,0,STR_PAD_LEFT).
+        str_pad($data["tgl"],2,0,STR_PAD_LEFT);
  // Input kedalam array $data agar $tanggal_lahir bisa ikut di validasi
     $data['tanggal_lahir'] = $tanggal_lahir;
     return Validator::make($data, [
@@ -105,17 +106,16 @@ class RegisterController extends Controller
  }
  
  // input data ke database
-
-        return User::create([
-            'nama' => $data['nama'],
-            'email' => $data['email'],
-            'tanggal_lahir' => $tanggal_lahir,
-            'pekerjaan' => $data ['pekerjaan'],
-            'kota' => $data['kota'],
-            'bio_profil' => $data['bio_profil'],
-            'gambar_profil' => $namaFile,
-            'backgroud_profil' => $data['background_profil'],
-            'password' => Hash::make($data['password']),
-        ]);
-    }
-}
+ return User::create([
+    'email' => $data['email'],
+     'password' => Hash::make($data['password']),
+     'nama' => $data['nama'],
+     'tanggal_lahir' => $tanggal_lahir,
+     'pekerjaan' => $data['pekerjaan'],
+     'kota' => $data['kota'],
+     'bio_profil' => $data['bio_profil'],
+     'gambar_profil' => $namaFile,
+ 'background_profil' => $data['background_profil'],
+ ]);
+ }
+};

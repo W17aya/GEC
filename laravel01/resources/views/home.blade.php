@@ -14,9 +14,7 @@
         <div class="col text-center">
             <h1>Member List</h1>
             <hr class="w-25">
-            <p class="lead"> Lorem ipsum dolor sit amet consectetur adipiscing
-                elit. Dignissimos, vitae! </p>
-
+            
                 {{-- FLASH MESSAGE --}}
                 @if(session()->has('pesan'))
                 @if(session()->get('pesan')) == 'update')
