@@ -1,6 +1,19 @@
 @extends('layouts.app')
 
 @section('content')
+
+<header id="login-header" class="header-image text-white d-none d-md-block">
+    <div class="overlay">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                <h1 class="display-1">Login</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Soluta harum aperium in facilis dicta.</p>
+            </div>
+        </div>
+    </div>
+</header>
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
