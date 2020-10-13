@@ -25,7 +25,8 @@
                          @method('PATCH')
                          @include('layouts.form',['tombol' => 'Update'])
                          </form>
-                         </div>
-                         </div>
-                        </div>
+                    </div>
+                </div>
+            </div>
+            
 @endsection
