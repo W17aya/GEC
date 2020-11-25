@@ -106,6 +106,7 @@ class RegisterController extends Controller
  }
  
  // input data ke database
+<<<<<<< HEAD
  return User::create([
     'email' => $data['email'],
      'password' => Hash::make($data['password']),
@@ -119,3 +120,19 @@ class RegisterController extends Controller
  ]);
  }
 };
+=======
+
+        return User::create([
+            'name' => $data['name'],
+            'email' => $data['email'],
+            'tanggal_lahir' => $tanggal_lahir,
+            'pekerjaan' => $data ['pekerjaan'],
+            'kota' => $data['kota'],
+            'bio_profil' => $data['bio_profil'],
+            'gambar_profil' => $namaFile,
+            'backgroud_profil' => $data['background_profil'],
+            'password' => Hash::make($data['password']),
+        ]);
+    }
+}
+>>>>>>> parent of 88554b6... view 1

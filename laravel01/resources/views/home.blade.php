@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+<<<<<<< HEAD
 
 <!---MEMBER LIST -->
 
@@ -28,11 +29,28 @@
             <button type="button" class="close" data-dismiss="alert">
                 <span>&times;</span>
             </button>
+=======
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">Dashboard</div>
+
+                <div class="card-body">
+                    @if (session('status'))
+                        <div class="alert alert-success" role="alert">
+                            {{ session('status') }}
+                        </div>
+                    @endif
+
+                    You are logged in!
+                </div>
+            </div>
+>>>>>>> parent of 88554b6... view 1
         </div>
-            @endif
-            @endif
     </div>
 </div>
+<<<<<<< HEAD
 <div class="card-columns">
     @forelse ($users as $user)
     <div class="card">
@@ -187,3 +205,6 @@
              </div>
             </div>
             @endsection
+=======
+@endsection
+>>>>>>> parent of 88554b6... view 1
