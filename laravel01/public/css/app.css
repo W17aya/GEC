@@ -17162,8 +17162,8 @@ readers do not read off random characters that represent icons */
 /* HEADER IMAGE - Gambar untuk setiap halaman */
 
 #register-header {
-  background-image: url("/img/logo.png");
-  background-position-y: -100px;
+  background-image: url("/img/images.jpg");
+  background-position-y: -200px;
 }
 
 #login-header {

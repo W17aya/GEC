@@ -37347,14 +37347,6 @@ $('.pilihan-background-profil').click(function () {
   var nomorGambar = this.children[0].innerHTML;
   $('#background_profil').val(nomorGambar);
 });
-$('.btn-hapus').click(function () {
-  var idHapus = $(this).attr('data-id');
-  $("#deleteForm").attr('action', '/users/' + idHapus);
-}); // Jika tombol "Ya, Hapus" di klik, submit form
-
-$('#deleteForm [type="submit"]').click(function () {
-  $("#deleteForm").submit();
-});
 
 /***/ }),
 
