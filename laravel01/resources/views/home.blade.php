@@ -2,6 +2,7 @@
 
 @section('content')
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 <!---MEMBER LIST -->
 
@@ -30,6 +31,8 @@
                 <span>&times;</span>
             </button>
 =======
+=======
+>>>>>>> parent of 88554b6... view 1
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -46,6 +49,7 @@
                     You are logged in!
                 </div>
             </div>
+<<<<<<< HEAD
 >>>>>>> parent of 88554b6... view 1
         </div>
     </div>
@@ -206,5 +210,11 @@
             </div>
             @endsection
 =======
+@endsection
+>>>>>>> parent of 88554b6... view 1
+=======
+        </div>
+    </div>
+</div>
 @endsection
 >>>>>>> parent of 88554b6... view 1
