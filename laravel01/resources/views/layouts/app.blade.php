@@ -45,7 +45,7 @@
                      <a class="nav-link p-4 active" href="{{ route('home') }}">Home</a>
                      </li>
                      <li class="nav-item">
-                     <a class="nav-link p-4" href="{{ route('about') }}">Profile</a>
+                     <a class="nav-link p-4" href="#">Profile</a>
                      </li>
                      <li class="nav-item">
                      <a class="nav-link p-4" href="#">Paket</a>
