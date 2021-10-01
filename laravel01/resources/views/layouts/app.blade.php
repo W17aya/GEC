@@ -6,7 +6,11 @@
        <!-- CSRF Token -->
      <meta name="csrf-token" content="{{ csrf_token() }}"> 
      <title>GEC</title>
+<<<<<<< HEAD
      <link rel="icon" href="{{ asset('img/logo gec.jpg') }}" type="image/logo.png">
+=======
+     <link rel="icon" href="{{ asset('img/favicon.png') }}" type="image/png">
+>>>>>>> parent of 82d76b6... Tampilan_Mark_1
 
      <script src="{{ asset('js/app.js') }}" defer></script>
      
@@ -19,9 +23,13 @@
                 <div class="container">
                     <a class="navbar-brand" href="{{route('home') }}">
                     <span class="d-none" > GEC</span>
-                    <img src="{{ asset('img/logo gec.jpg') }}"
+                    <img src="{{ asset('img/logoo.png') }}"
                     27 class="main-logo d-none d-md-inline" alt="GEC logo">
+<<<<<<< HEAD
                      <img src="{{ asset('img/logo gec.jpg') }}"
+=======
+                     <img src="{{ asset('img/logoo.png') }}"
+>>>>>>> parent of 82d76b6... Tampilan_Mark_1
                     29 class="small-logo d-inline d-md-none" alt="GEC logo">
                     </a>
                      <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -94,7 +102,11 @@
  <div class="row">
  <div class="col-md-3 text-center text-md-left">
  <a href="index.html">
+<<<<<<< HEAD
  <img src="{{ asset('img/logo gec.jpg') }}" style="height: 60px;">
+=======
+ <img src="{{ asset('img/GEC_logo.png') }}" style="height: 60px;">
+>>>>>>> parent of 82d76b6... Tampilan_Mark_1
  </a>
  <p>PELATIHAN DAN PENDAMPINGAN KAPAL PESIAR
  </p>
@@ -150,7 +162,7 @@
  <a href="#" class="text-white mr-2">
  <i class="fab fa-google-plus fa-lg"></i>
  </a>
- <a href="https://github.com/W17aya?tab=overview&from=2020-09-01&to=2020-09-30" class="text-white mr-2">
+ <a href="#" class="text-white mr-2">
  <i class="fab fa-github fa-lg"></i>
  </a>
  </div>

@@ -1,5 +1,5 @@
  @csrf
- <div class="form-group row">
+ <div class="form-group row"></div> 
   <label for="email" class="col-md-3 col-form-label text-md-right"> 
        Email * </label>
  <div class="col-md-6"> 
@@ -20,7 +20,7 @@
 
  <div class="form-group row">
  <label for="password" class="col-md-3 col-form-label text-md-right">
- Password  *</label>
+ Password *</label>
  <div class="col-md-6">
  <input id="password" type="password"
  class="form-control @error('password') is-invalid @enderror"
