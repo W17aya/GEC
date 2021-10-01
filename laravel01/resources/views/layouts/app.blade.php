@@ -7,10 +7,14 @@
      <meta name="csrf-token" content="{{ csrf_token() }}"> 
      <title>GEC</title>
 <<<<<<< HEAD
+<<<<<<< HEAD
      <link rel="icon" href="{{ asset('img/logo gec.jpg') }}" type="image/logo.png">
 =======
      <link rel="icon" href="{{ asset('img/favicon.png') }}" type="image/png">
 >>>>>>> parent of 82d76b6... Tampilan_Mark_1
+=======
+     <link rel="icon" href="{{ asset('img/favicon.png') }}" type="image/png">
+>>>>>>> parent of 82d76b6 (Tampilan_Mark_1)
 
      <script src="{{ asset('js/app.js') }}" defer></script>
      
@@ -26,10 +30,14 @@
                     <img src="{{ asset('img/logoo.png') }}"
                     27 class="main-logo d-none d-md-inline" alt="GEC logo">
 <<<<<<< HEAD
+<<<<<<< HEAD
                      <img src="{{ asset('img/logo gec.jpg') }}"
 =======
                      <img src="{{ asset('img/logoo.png') }}"
 >>>>>>> parent of 82d76b6... Tampilan_Mark_1
+=======
+                     <img src="{{ asset('img/logoo.png') }}"
+>>>>>>> parent of 82d76b6 (Tampilan_Mark_1)
                     29 class="small-logo d-inline d-md-none" alt="GEC logo">
                     </a>
                      <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -103,10 +111,14 @@
  <div class="col-md-3 text-center text-md-left">
  <a href="index.html">
 <<<<<<< HEAD
+<<<<<<< HEAD
  <img src="{{ asset('img/logo gec.jpg') }}" style="height: 60px;">
 =======
  <img src="{{ asset('img/GEC_logo.png') }}" style="height: 60px;">
 >>>>>>> parent of 82d76b6... Tampilan_Mark_1
+=======
+ <img src="{{ asset('img/GEC_logo.png') }}" style="height: 60px;">
+>>>>>>> parent of 82d76b6 (Tampilan_Mark_1)
  </a>
  <p>PELATIHAN DAN PENDAMPINGAN KAPAL PESIAR
  </p>
